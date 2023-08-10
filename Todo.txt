@@ -1,0 +1,2 @@
+1. Sometimes encrypted backup. Find out which databases stores a encrypted backup and which not.
+2. Automated backups?
