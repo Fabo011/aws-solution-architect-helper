@@ -6,4 +6,4 @@ The objective is to compare similar services and give you an high level overview
 
 Go through all folders and have fun 😝
 
-**Todo:** For further questions or discussions feel free to reach out in our Element group. Element by the way is a secure and anonymous messanger.
+**Todo:** For further questions or discussions feel free to reach out in our Element group. Element by the way is a secure and anonymous messanger. Or LinkedIn

@@ -9,4 +9,7 @@ Serverless                  | Serverless means that you not need to manage serve
 AZ                          | Availability Zones
 on-demand                   | Pricing model, pay for actual usage, per hour or seconds basis. Most expensive in AWS.
 PITR                        | Point-in-time recovery.
+SSD                         | Solid State Drive
+HDD                         | Hard Disk Drive
+IOPS                        | Input Output Per Second
 
