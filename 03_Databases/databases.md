@@ -113,6 +113,10 @@ The core service of AWS, a key/value store for objects.
 - Event Notifications: Send events via EventBridge to over 18 AWS services like SNS, SQS, Lambda.
 - S3 is accessible via roles, can also have policies and you can create an secret link to grant access via this links to other AWS users.
 - Requester pays model. You can configure that the requester pay the network costs.
+- Possible to set MFA to delete something in S3.
+- Ability to set data encryption.
+- S3 Glacier Vault Lock. A vaulted object can no longer be deleted.
+- Possibility to create pre-signed URL´s. Send other users or friends the link, then he has temporary access over the link (download something for example GET).
 
 ### Use Cases
 - Deploy static websites, also possible to deploy React, Vuejs websites which have access to an API server.

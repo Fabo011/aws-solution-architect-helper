@@ -2,6 +2,8 @@
 
 AWS means under the word "storage" to have EBS-Elastic Block Storage, EFS-Elastic File Storage, Instance Storage which you can attach to your EC2 Instances or containers. Keep in mind, logically under almost every managed serverless service in AWS lives a EC2 Instance.
 
+I also consider file systems like FSx Lustre, FSx Windows File Server, FSx NetApp ONTAP, FSx OpenZFS, thats high performance, fully managed file systems.
+
 ---
 <br>
 
@@ -69,6 +71,57 @@ It is like a USB-Stick to you instance.
 ---
 <br>
 
+## FSx Lustre
+
+### Pro
+- Machine learning high performance computing HPC.
+- SSD and HDD available.
+- Backups to S3.
+- Can be used from on-premises servers via VPN or DirectConnect.
+
+### Use Cases
+- Video processing.
+- Financial modeling.
+- Machine learning.
+
+___
+<br>
+
+## FSx Windows File Server
+
+### Pro
+- Only for Windows obviously.
+- SSD and HDD available.
+- Multi AZ possible.
+- Backup to S3.
+
+### Use Cases
+- Cloud high performance file system for Windows.
+
+___
+<br>
+
+## FSx NetApp ONTAP
+The idea behind is to have high performance, high compatibility file system.
+
+### Pro
+- Compatible with Linux, Windows, MacOS, VMWare, EC2, ECS, EKS.
+- File system compatible with NFS, SMB, iSCSI.
+- Point-in-time snapshots.
+
+### Contra
+- Stores backups on SSD, not in S3, danger od data loss.
+
+___
+<br>
+
+## FSx OpenZFS
+### Pro
+- File system compatible with NFS.
+- Compatible with Linux, Windows, MacOS, VMWare, EC2, ECS, EKS.
+- Low cost.
+- Backups to S3.
+
 ## Solution Architect Summary 😍
 
 - <b>EBS: </b>Use EBS when you need reliable, block-level storage for individual EC2 instances, including hosting the operating system, applications, and databases.
@@ -76,5 +129,7 @@ It is like a USB-Stick to you instance.
 - <b>EFS: </b>Use EFS when you require shared and scalable file storage that can be concurrently accessed by multiple EC2 instances, such as for web hosting, content management, and development environments.
 
 - <b>Instance Storage: </b>Use instance store when you need temporary, high-performance storage that is closely tied to the lifecycle of an EC2 instance and does not require data persistence beyond instance termination.
+
+- <b>High Performance File System: </b>Use one of the high performance file systems based on your requirements when you need more performance. FSx Lustre, FSx Windows File Server, FSx NetApp ONTAP or FSx OpenZFS.
 
 
