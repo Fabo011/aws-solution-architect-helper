@@ -12,4 +12,6 @@ PITR                        | Point-in-time recovery.
 SSD                         | Solid State Drive
 HDD                         | Hard Disk Drive
 IOPS                        | Input Output Per Second
+on-premises                 | Local servers, home servers, your PC, own data center.
+TB                          | Terabyte
 
