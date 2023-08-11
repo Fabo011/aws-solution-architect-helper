@@ -7,18 +7,18 @@ Relational Database.
 - Fully managed serverless database.
 - Automated failover, failover priority. Less than 30 seconds failover.
 - Automated AutoScaling.
-- Master + up to 15 read replicas. 
+- Master + up to 15 READ replicas. 
 - Automated encrypted backups which are stored in a S3.
-- Multi-Master is possible, but only within availability zones, not regional.
+- Multi-Master WRITE is possible, but only within availability zones, not regional.
 - Aurora Global up to 16 READ replicas in each region.
-- Aurora Machine Learning, ML using SageMaker
+- Aurora Machine Learning, machine learning model using SageMaker
 
 ## Contra
 - Costs 20% more than RDS databases.
 - Multiple master replication only within a region, multiple region write data not possible.
 
 ## Use Cases
-- High performance, scaleable, high available, managed relational database, compatable with Postgres and MySQL.
+- High performance, scalable, high available, managed relational database, compatible with Postgres and MySQL.
 - WebApps, fast read and write.
 - CMS platforms.
 - Microservice architecture.
@@ -30,14 +30,14 @@ DynamoDB is the only one global database in AWS which offers global tables.
 
 ### Pro
 - Automatically replicate READ/Write data across multiple AWS regions.
-- Fully managed, high availabilty serverless database.
+- Fully managed serverless database.
 - Low latency access due to regional replicas.
 - Each regional replica is asynchronously updated. Maintain consistency.
 - TTL, time to live functionality. Meaning, automatically delete items after expiry timestamp.
 - Steaming processing, react in real time.
-- Able to trigger Lambda functions.
+- Ability to trigger Lambda functions.
 - Fully automated on-demand backup, restore, and point-in-time recovery for data protection and archiving.
-- DynamoDB DAX for read cache, low latency.
+- DynamoDB DAX for read cache, low latency like ElastiCache.
 - Export, import to S3.
 - AutoScaling
 - Integrated IAM for security.
@@ -54,12 +54,12 @@ Aurora is an AWS implementation of Postgres/MySQL and DocumentDB is the same for
 ### Pro
 - AutoScaling.
 - MongoDB compatibility.
-- Replication accross three AZ.
-- Fully managed, high availabilty serverless database.
+- Replication across three AZ.
+- Fully managed serverless database.
 - Continuous backups into an S3, automated snapshots.
 
 ### Contra 
-- Multi reagion READ/Write replications not possible.
+- Multi region READ/Write replications not possible.
 
 ### Use Cases
 - Million requests per second. 
@@ -76,7 +76,7 @@ Managed Postgres, MySQL, Oracle, SQL Server, MariaDB databases.
 - RDS Custom to customize the underlying EC2 Instance only for Oracle & SQL Server.
 
 ### Contra
-- Multi reagion READ/Write replications not possible.
+- Multi region READ/Write replications not possible.
 
 ## S3
 The core service of AWS, a key/value store for objects.
@@ -93,14 +93,14 @@ The core service of AWS, a key/value store for objects.
 - Different tiers for data backups.
 - Cheap data store of any kind of data.
 - Able to trigger Lambda functions.
-- Accessable by Lambda.
+- Accessible by Lambda.
 - Versioning of data in S3 possible.
-- Ability to create different path, for example /photos, /private, /secure and grant specific or differnet policies to each path.
+- Ability to create different path, for example /photos, /private, /secure and grant specific or different policies to each path.
 - Lifecycle rules: Manage things on S3 for example move data from S3 Standard to S3 Glacier or delete data which are older than 7 years. 
-- Sync between S3 buckets in differnet regions possible via CLI.
+- Sync between S3 buckets in different regions possible via CLI.
 - Batch operations: Encrypt un-encrypt objects etc.
 - Event Notifications: Send events via EventBridge to over 18 AWS services like SNS, SQS, Lambda.
-- S3 is accessable via roles, can also have policies and you can create an secret link to grant access via this links to other AWS users.
+- S3 is accessible via roles, can also have policies and you can create an secret link to grant access via this links to other AWS users.
 - Requester pays model. You can configure that the requester pay the network costs.
 
 ### Use Cases
@@ -158,8 +158,41 @@ AWS Keyspaces.
 - Time series data
 
 ## QLDB
+Quantum Ledger Database
 
+### Pro
+- Review history of all changes made from your application.
+- Track all changes.
+- Cryptographically verifiable.
+- Deployed across multiple AZs with multiple copies per AZ.
+- Possible to make backups to S3.
+- All data in transit and at rest is encrypted.
+
+### Contra
+- Does not support cross-region replication.
+- No default backup.
+
+### Use Cases
+- It is specifically designed for applications that require an immutable and verifiable transaction history.
+- Financial Auditing and Compliance.
+- Healthcare Records.
+- Legal and Notary Services.
 
 
 ## Timestream
+Time series database.
+
+### Pro
+- Each data point is associated with a specific timestamp.
+- The Timestream database automatically organizes the data based on its timestamps and partitions it for efficient storage and querying.
+- You can use the on-demand backup feature to create full backups of your Amazon Timestream tables.
+
+### Use Cases
+- Applications that deal with large volumes of time-stamped data points.
+- Collect and analyze data directly in the database.
+- Log and event analysis.
+- Industrial machinery and equipment, helping monitor operational efficiency and predict maintenance needs.
+- Digital Marketing Analytics.
+- Timestream can automatically manage data retention policies, making it easy to manage and control the lifecycle of your time-series data.
+
 
