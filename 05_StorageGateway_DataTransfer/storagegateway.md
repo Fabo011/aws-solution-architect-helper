@@ -4,6 +4,9 @@ AWS means under the word "Storage Gateway" to establish a gateway between your o
 
 Hint: Storage Gateway is a high level word for the following types of storage gateways.
 
+---
+<br>
+
 ## S3 File Gateway
 Transfer data to S3 with Storage Gateway S3 File Gateway via HTTPS.
 For backup/archive data in S3 use S3 Glacier, Glacier is much cheaper than normal S3 storages.
@@ -23,6 +26,9 @@ You need to have S3 File Gateway software installed on your on-premises server o
 
 ![S3 Storage Gateway](./draws/s3-fileGateway.png)
 
+---
+<br>
+
 ## FSx File Gateway
 Transfer on-premises file system data to AWS Cloud AWS FSx.
 You need to have FSx File Gateway software installed on your on-premises server or Laptop.
@@ -36,6 +42,9 @@ IMPORTANT: This is only for Windows.
 
 ![FSx Storage Gateway](./draws/fsx-windows-gateway.png)
 
+---
+<br>
+
 ## Volume Gateway
 Transfer EBS Storage data to AWS Cloud S3 bucket.
 You need to have Volume Gateway software installed on your on-premises server or Laptop.
@@ -46,6 +55,9 @@ You need to have Volume Gateway software installed on your on-premises server or
 - Keep in mind you need a Lifecycle policy to transfer data from S3 to S3 Glacier.
 
 ![Volume Storage Gateway](./draws/volumeGateway.png)
+
+---
+<br>
 
 ## Tape Gateway
 Transfer on-premises backup data to AWS Cloud for archiving.
@@ -58,6 +70,9 @@ You need to have Tape Gateway software installed on your on-premises server or L
 
 ![Tape Storage Gateway](./draws/tape-gateway.png)
 
+---
+<br>
+
 ## Transfer Family
 Transfer data into and out to EFS via SFTP, FTPS or FTP.
 Transfer data into S3 via SFTP, FTPS or FTP.
@@ -67,6 +82,9 @@ You need to have FTP Client software installed on your on-premises server or Lap
 - Assign IAM Roles to the users which accessing the S3 or EFS.
 
 ![Transfer Family](./draws/transfer-family.png)
+
+---
+<br>
 
 ## DataSync
 Data Transfer.
@@ -85,6 +103,9 @@ If you use AWS Snowcone, DataSync Agent is pre installed.
 
 ![DataSync 2](./draws/dataSync2.png)
 
+---
+<br>
+
 ## AWS Snow Family
 The idea is to order physical devices from AWS and transfer your on-premises data offline on the Snow Family devices like Snowcone or Snowball.<br>
 <br>
@@ -98,6 +119,8 @@ Use one of the AWS Snow Family if you have large amount of data, if you have not
 <br><br>
 Can also be used for migration, but for migration see "DatabaseMigration".
 
+---
+<br>
 
 ## Snowcone From AWS Snow Family
 Snowcone, smallest and handiest Snow Family device.
@@ -112,6 +135,8 @@ Snowcone, smallest and handiest Snow Family device.
 
 ![Snowcone](./draws/snowcone.jpg)
 
+---
+<br>
 
 ## Snowball From AWS Snow Family
 
@@ -125,6 +150,8 @@ Snowcone, smallest and handiest Snow Family device.
 
 ![Snowball](./draws/snowball.png)
 
+---
+<br>
 
 ## Snowmobile From Snow 
 The AWS Snowmobile is a specialized truck (yeah a fucking truck 😃) that is equipped with the necessary hardware to securely transfer and store massive amounts of data (1 petabyte) from your on-premises data center to the AWS cloud.
@@ -138,6 +165,8 @@ The AWS Snowmobile is a specialized truck (yeah a fucking truck 😃) that is eq
 - Probably the most expensive short-term service of AWS.
 - Of course, only offline.
 
+---
+<br>
 
 ## Solution Architect Summary 😍
 

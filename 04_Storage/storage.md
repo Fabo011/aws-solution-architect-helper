@@ -2,6 +2,9 @@
 
 AWS means under the word "storage" to have EBS-Elastic Block Storage, EFS-Elastic File Storage, Instance Storage which you can attach to your EC2 Instances or containers. Keep in mind, logically under almost every managed serverless service in AWS lives a EC2 Instance.
 
+---
+<br>
+
 ## EBS Elastic Block Storage
 A network drive you can attach to your instances.
 It is like a USB-Stick to you instance.
@@ -26,6 +29,9 @@ It is like a USB-Stick to you instance.
 - Store instance data on it to replicate it easily to other instances.
 - Ability to store/run operating system.
 
+---
+<br>
+
 ## EFS Elastic File System
 
 ### Pro
@@ -45,6 +51,9 @@ It is like a USB-Stick to you instance.
 - Can be attached from multiple instances.
 - CMS - Wordpress etc.
 
+---
+<br>
+
 ## EC2 Instance Storage
 
 ### Pro
@@ -56,6 +65,9 @@ It is like a USB-Stick to you instance.
 
 ### Use Cases
 - Good for buffer, caching, temporary content.
+
+---
+<br>
 
 ## Solution Architect Summary 😍
 

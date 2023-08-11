@@ -23,6 +23,8 @@ Relational Database.
 - CMS platforms.
 - Microservice architecture.
 
+---
+<br>
 
 ## DynamoDB
 NoSQL database.<br>
@@ -47,6 +49,9 @@ DynamoDB is the only one global database in AWS which offers global tables.
 - Millions of requests per seconds.
 - Multi regional architecture.  
 
+---
+<br>
+
 ## DocumentDB
 NoSQL Database.<br>
 Aurora is an AWS implementation of Postgres/MySQL and DocumentDB is the same for MongoDB.
@@ -64,6 +69,9 @@ Aurora is an AWS implementation of Postgres/MySQL and DocumentDB is the same for
 ### Use Cases
 - Million requests per second. 
 
+___
+<br>
+
 ## RSD
 Relational databases.<br>
 Managed Postgres, MySQL, Oracle, SQL Server, MariaDB databases.
@@ -77,6 +85,9 @@ Managed Postgres, MySQL, Oracle, SQL Server, MariaDB databases.
 
 ### Contra
 - Multi region READ/Write replications not possible.
+
+___
+<br>
 
 ## S3
 The core service of AWS, a key/value store for objects.
@@ -109,6 +120,9 @@ The core service of AWS, a key/value store for objects.
 - Personal use to store pictures, videos or private backups.
 - AWS using S3 for backup for other services like EBS snapshot, Aurora backups, DynamoDB backups, EFS backups etc.
 
+___
+<br>
+
 ## ElastiCache
 ElastiCache is a database in RAM for high performance read.<br>
 Redis- and Memcached-compatible service.
@@ -130,6 +144,9 @@ Redis- and Memcached-compatible service.
 - Speeds up database and application performance.
 - Data Analytics.
 
+___
+<br>
+
 ## Neptune
 Graph database.
 
@@ -142,6 +159,9 @@ Graph database.
 - Social Media apps.
 - Knowledge graphs.
 - Recommendation engines like e-commerce, streaming-provider.
+
+___
+<br>
 
 ## Keyspaces Apache Cassandra
 NoSQL database. <br>
@@ -156,6 +176,9 @@ AWS Keyspaces.
 ### Use Cases
 - IoT devices info.
 - Time series data
+
+___
+<br>
 
 ## QLDB
 Quantum Ledger Database
@@ -178,6 +201,8 @@ Quantum Ledger Database
 - Healthcare Records.
 - Legal and Notary Services.
 
+___
+<br>
 
 ## Timestream
 Time series database.
@@ -194,6 +219,9 @@ Time series database.
 - Industrial machinery and equipment, helping monitor operational efficiency and predict maintenance needs.
 - Digital Marketing Analytics.
 - Timestream can automatically manage data retention policies, making it easy to manage and control the lifecycle of your time-series data.
+
+___
+<br>
 
 ## Solution Architect Summary 😍
 
