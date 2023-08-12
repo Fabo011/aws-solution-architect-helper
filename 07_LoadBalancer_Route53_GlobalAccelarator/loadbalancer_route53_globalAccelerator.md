@@ -11,7 +11,7 @@ With Application Load Balancers, Network Load Balancers, and Gateway Load Balanc
 
 **Note:** I will not go to deep into these services, this is for understanding.
 
-**Note:** Elastic Load Balancer ELB is a high level word for Application Load Balancer ALP and Network Load Balancer NLB.
+**Note:** Elastic Load Balancer ELB is a high level word for Application Load Balancer ALP, Network Load Balancer NLB and Gateway LOad Balancer.
 
 ___
 <br>
@@ -26,8 +26,8 @@ ALP works with health checks to your applications. In connection with a AutoScal
 - Load balancing to multiple applications on the same machine (containers).
 - Layer 7 (HTTP/HTTPS traffic), flexible.
 - It is also possible to have a load balancer to on-premises servers or hybrid.
-- ALP can be connected with AutoScaling.
-- Possibility to set SSL Certificate.
+- ALP can be connected with AutoScalingGroup.
+- Possibility to set SSL/TSL Certificate.
 - Cross zone load balancing is best practice for a ALB. It is required to have atleast two AZ.
 - Round Robin algorithm to route traffic. 
 - IP addresses are dynamic. 
@@ -51,13 +51,27 @@ In this example without AutoScaling, ALB has created so called nodes for every A
 - Layer 4 (TLS/TCP/UDP traffic), static IPs.
 - For TCP/UDP targets.
 - Can be used with PrivateLink due to static IPs.
+- Possibility to set SSL/TSL Certificate.
 
 ___
 <br>
 
-## Gateway Load Balancer GLB
-Security
+## Gateway Load Balancer GWLB
+Gateway Load Balancer is for high security architecture. It provides a single point to enter and exit. Your traffic will be routed to firewalls before the application receiving the request. 
 
+## Pro
+- Layer 3 (Network Layer) IP packets - only private IPs.
+- High security.
+- Possibility to set SSL/TSL Certificate.
+- Singe entry and exit point for all traffic.
+- GENEVE protocol on port 6081.
+- GWLB can be connected with AutoScalingGroup.
+- Cross load balancing possible to enable, best practice.
+
+![Gateway Load Balancer](./draws/gwlb.png)
+
+---
+<br>
 
 ## ALB vs NLB
 
@@ -66,6 +80,9 @@ Security
 - Also Application Load Balancer can guarantee application availability, however Network Load Balancer cannot.
 
 ![Application Load Balancer vs Network Load Balancer](./draws/ALBvsNLB.png)
+
+---
+<br>
 
 ## ALB + NLB
 
@@ -96,4 +113,4 @@ TODO
 
 - <b>NLB (Network Load Balancer): </b>Choose NLB for scenarios requiring high-throughput, low-latency load balancing of TCP/UDP traffic, such as gaming, IoT, and real-time communication applications.
 
-- <b>Gateway Load Balancer: </b>Opt for Gateway Load Balancer when you want to deploy and manage third-party virtual appliances like firewalls and security devices in your VPC network traffic path.
+- <b>Gateway Load Balancer: </b>Opt for Gateway Load Balancer when you want to deploy and manage third-party virtual appliances like firewalls and security devices in your VPC network traffic path. High security architectures.
