@@ -30,7 +30,8 @@ ALP works with health checks to your applications. In connection with a AutoScal
 - Possibility to set SSL/TSL Certificate.
 - Cross zone load balancing is best practice for a ALB. It is required to have atleast two AZ.
 - Round Robin algorithm to route traffic. 
-- IP addresses are dynamic. 
+- IP addresses are dynamic.
+- Possibility to use WAF - AWS Web Application Firewall.
 
 ### Examples
 
@@ -52,6 +53,9 @@ In this example without AutoScaling, ALB has created so called nodes for every A
 - For TCP/UDP targets.
 - Can be used with PrivateLink due to static IPs.
 - Possibility to set SSL/TSL Certificate.
+
+### Contra
+- WAF - AWS Web Application Firewall cannot be used because WAf in on Layer 7 HTTP.
 
 ___
 <br>
@@ -78,6 +82,7 @@ Gateway Load Balancer is for high security architecture. It provides a single po
 - ALB and NLB working on different levels.
 - While the Application Load Balancer(ALB) looks at the HTTP request header to determine where to route the request, the Network Load Balancer(NLB) simply forwards requests.
 - Also Application Load Balancer can guarantee application availability, however Network Load Balancer cannot.
+- No WAF possible.
 
 ![Application Load Balancer vs Network Load Balancer](./draws/ALBvsNLB.png)
 
