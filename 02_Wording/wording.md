@@ -14,4 +14,5 @@ HDD                         | Hard Disk Drive
 IOPS                        | Input Output Per Second
 on-premises                 | Local servers, home servers, your PC, own data center.
 TB                          | Terabyte
+Single point of failure     | A component or element in a system that, if it fails, can cause the entire system to stop working or become unavailable.
 

@@ -43,6 +43,7 @@ DynamoDB is the only one global database in AWS which offers global tables.
 - Export, import to S3.
 - AutoScaling
 - Integrated IAM for security.
+- Free VPC endpoint (Gateway endpoint), you can connect DynamoDb from a VPC via VPC Endpoint for free.
 
 ### Use Cases:
 - Serverless architectures.
