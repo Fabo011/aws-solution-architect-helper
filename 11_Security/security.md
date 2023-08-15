@@ -136,6 +136,13 @@ Firewall for the entire AWS VPC.
 ---
 <br>
 
+## AWS Cognito
+
+ToDo
+
+---
+<br>
+
 
 ## Solution Architect Summary 😍
 
