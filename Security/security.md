@@ -124,8 +124,14 @@ Amazon Macie helps protecting PII data. Macie is a fully managed data security a
 <br>
 
 ## AWS Network Firewall
+Firewall for the entire AWS VPC.
 
-ToDo
+### Pro
+- Alert for traffic that matches rules what we set.
+- Regex checking.
+- Active flow inspection.
+
+![Network Firewall](./draws/network-firewall.png)
 
 ---
 <br>
@@ -152,3 +158,5 @@ ToDo
 - <b>Inspector: </b>Use AWS Inspector if you need an security scanner for EC2 Instances, Container Images (ECR) or Lambda functions and let you inform via email or notification. Inspector is a security scanning tool in application level. GuardDuty for your account, Inspector for your applications.
 
 - <b>Macie: </b>Use AWS Macie if you wanna find PII (Personally Identifiable Information) etc. By connecting Macie with CloudWatch, you can enhance your ability to monitor, analyze, and respond to security events and findings related to sensitive data stored in Amazon S3. It enables you to proactively manage your data security posture and take timely actions to mitigate risks.
+
+- <b>AWS Network Firewall: </b>Use AWS Network Firewall when you need a firewall on VPC level.
