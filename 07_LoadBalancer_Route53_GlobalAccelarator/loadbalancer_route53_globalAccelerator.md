@@ -104,9 +104,15 @@ Gateway Load Balancer is for high security architecture. It provides a single po
 <br>
 
 ## Route53
+Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service.
 For understanding, Route53 is the layer above the Load Balancers, but it is more than that, let me explain.
 
-TODO
+### Pro
+- Domain name registration.
+- For multi region architectures.
+
+### Geolocation routing
+
 
 ---
 <br>

@@ -139,17 +139,6 @@ Amazon AppFlow is a fully managed API integration service that you use to connec
 
 ### Pro
 - Shift data from cloud services like Salesforce to AWS Cloud, or from AWS Cloud to Salesforce for example.
-- Host frontend with Amplify like React, Vuejs, Angular etc.
-
----
-<br>
-
-## AWS Amplify
-Use AWS Amplify to develop and deploy cloud-powered mobile apps and web apps.
-
-### Pro
-- Connect your code from Github for example etc.
-- Amplify is the Elastic Beanstalk for mobile and web apps.
 
 ---
 <br>
@@ -213,8 +202,6 @@ Still ToDo
 - <b>AWS Batch</b>Use AWS Batch for fully managed batch jobs.
 
 - <b>AppFlow: </b>Use AWS AppFlow to shift data from cloud services like Salesforce to AWS Cloud, or from AWS Cloud to Salesforce for example.
-
-- <b>Amplify: </b>Host frontend applications like Vuejs, Reac, Nextjs etc. fully managed like Beanstalk is doing with backend applications.
 
 - <b>Well-Architected Framework: </b>Use AWS Well-Architected Framework to review your architecture and improve.
 
