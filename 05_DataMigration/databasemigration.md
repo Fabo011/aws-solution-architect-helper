@@ -112,6 +112,27 @@ Centrally manage and automate backups within AWS Cloud.
 ---
 <br>
 
+## MGN - AWS Application Migration Service
+
+### Pro
+- Lift and shift (rehost) solution which simplify migration applications to AWS.
+- Converts your physical, virtual and cloud based servers to run natively in the cloud.
+-  When you’re ready, it automatically converts and launches your servers on AWS.
+
+![Rehost](./draws/rehost.png)
+
+---
+<br>
+
+## VMware Cloud on AWS
+### Pro
+- Migrate VMware vSphere based workloads to AWS
+- Run production environment hybrid between on-premises and AWS Cloud.
+- Disaster recovery strategy.
+
+---
+<br>
+
 ## Solution Architect Summary 😍
 
 - <b>DMS: </b>Use Database Migration Service to migrate databases from on-premises to AWS Cloud but you can also use DMS within AWS Cloud to migrate as well or to synchronous database replication in multi AZ.
@@ -125,3 +146,11 @@ Centrally manage and automate backups within AWS Cloud.
 - <b>AWS Backup: </b>Use AWS Backup to manage, plan and automate backups within AWS Cloud in one place. For all databases and EFS, FSx, Storage Gateway.
 
 - <b>AWS Backup Vault Lock: </b>Use AWS Backup Vault Lock when you want to create a backup which cant be deleted. Even the root user cannot delete backups when this is enabled. Use MFA to disable this.
+
+- <b>AWS Application Discovery Service: </b>Use Application Discovery Service when you wanna migrate on-premises application -> AWS Cloud. Discover Service will gather information about your data center (config, dependencies, mapping etc.) to help you to migrate application to AWS seamlessly.
+
+- <b>MGN: </b>Use AWS Application Migration Service when you wanna shift and lift on-premises applications to AWS Cloud.
+
+- <b>Snow Family: </b>Use one of the services of Snow Family to migrate extra large amount of data to AWS Cloud. When your migration takes longer than 1 week over the internet just take Snowball for example to migrate. For more information about Snow Family go ti StorageGateway_Transfer.
+
+- <b>VMware Cloud on AWS: </b>Use VMware Cloud on AWS when you wanna run your on-premises VMware hybrid with AWS Cloud for disaster recovery strategy or migrate in to AWS.

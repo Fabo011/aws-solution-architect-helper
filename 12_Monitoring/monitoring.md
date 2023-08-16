@@ -39,11 +39,6 @@ AWS Config automatically evaluates the recorded configurations against the confi
 ---
 <br>
 
-## CloudFormation
-
----
-<br>
-
 ## Solution Architect Summary 😍
 
 <b>CloudWatch: </b>Use CloudWatch for real-time monitoring and alerting of performance metrics to ensure optimal application and resource health.
@@ -51,5 +46,3 @@ AWS Config automatically evaluates the recorded configurations against the confi
 <b>CloudTrail: </b>Use CloudTrail to track and audit API activity of everything in your AWS account (creation of EC2 Instance, deletion of Container etc.) to maintain accountability, governance, and compliance.
 
 <b>Config: </b>Use AWS Config for continuous configuration monitoring and assessment of resource compliance to enforce desired configurations and detect changes. Use it like a unit test for your configurations.
-
-<b>CloudFormation: </b>Use AWS CloudFormation to provision and manage infrastructure as code, ensuring consistent and repeatable deployments of resources and applications.

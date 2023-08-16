@@ -80,6 +80,7 @@ Prices are per GB.
 ![Costs](./draws/networking-costs.png)
 
 Be smart and minimize costs.
+
 ![Costs min](./draws/minimize-cost-tech.png)
 
 Another example.

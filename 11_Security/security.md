@@ -137,8 +137,7 @@ Firewall for the entire AWS VPC.
 <br>
 
 ## AWS Cognito
-
-ToDo
+Amazon Cognito handles user authentication and authorization for your web and mobile apps. With user pools, you can easily and securely add sign-up and sign-in functionality to your apps. With identity pools (federated identities), your apps can get temporary credentials that grant users access to specific AWS resources, whether the users are anonymous or are signed in.
 
 ---
 <br>
@@ -167,3 +166,5 @@ ToDo
 - <b>Macie: </b>Use AWS Macie if you wanna find PII (Personally Identifiable Information) etc. By connecting Macie with CloudWatch, you can enhance your ability to monitor, analyze, and respond to security events and findings related to sensitive data stored in Amazon S3. It enables you to proactively manage your data security posture and take timely actions to mitigate risks.
 
 - <b>AWS Network Firewall: </b>Use AWS Network Firewall when you need a firewall on VPC level.
+
+- <b>Cognito: </b>
