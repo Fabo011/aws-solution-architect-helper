@@ -139,9 +139,15 @@ Firewall for the entire AWS VPC.
 ## AWS Cognito
 Amazon Cognito handles user authentication and authorization for your web and mobile apps. With user pools, you can easily and securely add sign-up and sign-in functionality to your apps. With identity pools (federated identities), your apps can get temporary credentials that grant users access to specific AWS resources, whether the users are anonymous or are signed in.
 
+### Pro
+- Simple signUp ans signIn: username, password etc.
+- Password reset.
+- MFA
+- Email or SMS verification.
+- Federated Identities: Facebook, Google etc.
+
 ---
 <br>
-
 
 ## Solution Architect Summary 😍
 
@@ -167,4 +173,4 @@ Amazon Cognito handles user authentication and authorization for your web and mo
 
 - <b>AWS Network Firewall: </b>Use AWS Network Firewall when you need a firewall on VPC level.
 
-- <b>Cognito: </b>
+- <b>Cognito: </b>Use AWS Cognito for user authentication an authorization for web and apps.

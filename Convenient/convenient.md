@@ -124,15 +124,75 @@ Convert media files stored in S3 into media files in the required format (phones
 <br>
 
 ## AWS Batch
+Service to execute batch jobs.
 
-
+### Pro
+- Scalable.
+- Starts EC2 or Spot Instances dynamically.
+- Batch jobs scheduled with start and end.
 
 ---
 <br>
 
-ToDo: 
+## AWS AppFlow 
+Amazon AppFlow is a fully managed API integration service that you use to connect your software as a service (SaaS) applications to AWS services, and securely transfer data. Use Amazon AppFlow flows to manage and automate your data transfers without needing to write code.
 
-2. Well-Architected Framework
+### Pro
+- Shift data from cloud services like Salesforce to AWS Cloud, or from AWS Cloud to Salesforce for example.
+- Host frontend with Amplify like React, Vuejs, Angular etc.
+
+---
+<br>
+
+## AWS Amplify
+Use AWS Amplify to develop and deploy cloud-powered mobile apps and web apps.
+
+### Pro
+- Connect your code from Github for example etc.
+- Amplify is the Elastic Beanstalk for mobile and web apps.
+
+---
+<br>
+
+## Well-Architected Framework
+
+### Pro
+- General guiding principles.
+- Stop guessing your capacity needs.
+- Test system at production scale.
+- Automate things to make experimentation easier.
+- Improve through game days, simulate applications.
+
+### 6 Pillars
+1. Operational Excellence
+2. Security
+3. Reliability
+4. Performance Efficiency
+5. Cost Optimization
+6. Sustainability
+
+<a href="https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc&wa-guidance-whitepapers.sort-by=item.additionalFields.sortDate&wa-guidance-whitepapers.sort-order=desc" target="_blank">https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc&wa-guidance-whitepapers.sort-by=item.additionalFields.sortDate&wa-guidance-whitepapers.sort-order=desc</a>
+
+### AWS Well Architected Framework Tool
+
+<a href="https://console.aws.amazon.com/wellarchitected" target="_blank">https://console.aws.amazon.com/wellarchitected</a> 
+
+---
+<br>
+
+## Trusted Advisor
+Hight level account assessment, like unit tests for your architecture.
+
+- Cost optimization
+- Performance
+- Security
+- Fault tolerance
+- Service limits
+
+Still ToDo
+
+---
+<br>
 
 ## Solution Architect Summary 😍
 
@@ -149,4 +209,12 @@ ToDo:
 - <b>Cost Explorer: </b>Use Cost Explorer to control and estimate costs. Create save plans.
 
 - <b>AWS Elastic Transcoder: </b>Use Elastic Transcoder to convert media files into the right format for different devices for example smartphones, tablets etc.
+
+- <b>AWS Batch</b>Use AWS Batch for fully managed batch jobs.
+
+- <b>AppFlow: </b>Use AWS AppFlow to shift data from cloud services like Salesforce to AWS Cloud, or from AWS Cloud to Salesforce for example.
+
+- <b>Amplify: </b>Host frontend applications like Vuejs, Reac, Nextjs etc. fully managed like Beanstalk is doing with backend applications.
+
+- <b>Well-Architected Framework: </b>Use AWS Well-Architected Framework to review your architecture and improve.
 
