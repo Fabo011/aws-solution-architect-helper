@@ -33,6 +33,7 @@ Defined by the organization. RTO is the maximum acceptable delay between the int
    Full system is up and running with minimum size. Very low RTO, recovery in seconds. Very EXPENSIVE - for very critical architectures for example hospital applications.
 
 The warmer the more expensive.
+
 ![Recovery Strategies](./draws/recovery.png)
 
 ---
