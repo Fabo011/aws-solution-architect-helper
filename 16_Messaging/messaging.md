@@ -35,10 +35,10 @@ SQS FIFO is the same like SQS but with a strict ordered structure of messages Fi
 
 Simple
 ![SQS FIFO](./draws/sqs-fifo-example-simple.png)
-
+<br>
 Advanced
 ![SQS FIFO 2](./draws/sqs-fifo-example-advanced.png)
-
+<br>
 Real life
 ![SQS FIFO 3](./draws/sqs-fifo-real-life.png)
 
