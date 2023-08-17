@@ -11,6 +11,7 @@ Multi region and multi AZ architectures.
 ---
 
 The smaller you keep the downtime (architecture) the higher it will cost.
+
 ![Disaster Recovery](./draws/disaster-recovery.png)
 
 ### RPO - Recovery Point Objective
@@ -48,7 +49,8 @@ A small quick secure migrate database which running on EC2.
 
 ![DMS](./draws/dms.png)
 
-DMS multi AZ replication example
+DMS multi AZ replication example.
+
 ![DMS az](./draws/dms-multi-az.png)
 
 ---
