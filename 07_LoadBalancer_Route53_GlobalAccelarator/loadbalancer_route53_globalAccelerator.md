@@ -111,8 +111,47 @@ For understanding, Route53 is the layer above the Load Balancers, but it is more
 - Domain name registration.
 - For multi region architectures.
 
-### Geolocation routing
+### Methods of routing
+- <b>Simple routing policy</b> — Use for a single resource that performs a given function for your domain, for example, a web server that serves content for the example.com website. No Health Checks possible.
+![Simple routing policy](./draws/route53-simple-routing.png)
 
+- <b>Weighted routing policy</b> — Use to route traffic to multiple resources in proportions that you specify. Define how much traffic specific resources should get, for example 30% of traffic for resource A and 70% for B.
+![Weighted routing policy](./draws/route53-weighted-routing.png)
+
+- <b>Latency routing policy</b> — Use when you have resources in multiple AWS Regions and you want to route traffic to the region that provides the best latency, the shortest way to the next server from user perspective. For example, when there are latencies of 50ms and 400ms it will automatically take 50ms to the lowest latency.
+![Latency routing policy](./draws/route53-latency-based-routing.png)
+
+- <b>Failover routing policy</b> — Use when you want to configure active-passive failover. Combined with Heath Checks. If one service is unhealthy, Route53 failover policy will automatically failover to the healthy service.
+![Failover routing policy](./draws/route53-failover-routing.png)
+
+- <b>Geolocation routing policy</b> — Use when you want to route traffic based on the location of your users.
+![Geolocation routing policy](./draws/route53-geolocation-routing.png)
+
+- <b>Geoproximity routing policy</b> — Use when you want to route traffic based on the location of your resources and, optionally, shift traffic from resources in one location to resources in another.
+![Geoproximity routing policy](./draws/route53-geoproximity-routing.png)
+
+- <b>Multivalue answer routing policy</b> — Use when you want Route 53 to respond to DNS queries with up to eight healthy records selected at random. Associated with Health Checks to return only to healthy services. Multi-value is not suitable with ELB therefore use Health Checks directly to your services and not ELB.
+![Multivalue routing policy](./draws/route53-multi-value-routing.png)
+
+- <b>IP-based routing</b>Just imaging you have a range of CIDR IP addresses then you can route traffic on ranges.
+![IP routing](./draws/route53-ip-based-routing.png)
+
+### CNAME vs Alias
+- CNAME = blog.example.com. IN CNAME myblog.com.
+- Alias = example.com. IN ALIAS my-load-balancer-123456789.us-east-1.elb.amazonaws.com.
+
+### TTL - Time To Live
+Time to live of records.
+
+- Use more than 24h TTL when you not change records, it is much cheaper due to fewer traffic on DNS servers.
+- Use shorter TTL for the opposite, but it is more expensive.
+
+---
+<br>
+
+## Global Accelerator
+
+ToDo
 
 ---
 <br>
@@ -125,3 +164,5 @@ For understanding, Route53 is the layer above the Load Balancers, but it is more
 - <b>NLB (Network Load Balancer): </b>Choose NLB for scenarios requiring high-throughput, low-latency load balancing of TCP/UDP traffic, such as gaming, IoT, and real-time communication applications.
 
 - <b>Gateway Load Balancer: </b>Opt for Gateway Load Balancer when you want to deploy and manage third-party virtual appliances like firewalls and security devices in your VPC network traffic path. High security architectures.
+
+- <b>Route53: </b>Use Route53 as a Domain Name Service, create domains like (example.com) assign SSL/TSL certificates to then and more important use Route53 for cross regional routing. Make health checks on your load balancers or services and route traffic to healthy resources in multiple regions or route users to their location based service or route users latency based usw.
