@@ -150,8 +150,39 @@ Time to live of records.
 <br>
 
 ## Global Accelerator
+Is a network layer service in which you create accelerators to improve the security, availability, and performance of your applications for local and global users.
 
-ToDo
+- Works with ElasticIP, EC2, ALB, NLB, public or private.
+- Performs health checks.
+- Intelligent multi regional routing to the lowest latency and fast regional failover.
+- No issue with client cache because the IP does not change.
+- Uses AWS internal network.
+- DDos protection with AWS Shield per default.
+
+
+### Route53 + Global Accelerator + LoadBalancer
+In most scenarios, you can configure DNS to use your custom domain name (such as www.example.com) with your accelerator, instead of using the assigned static IP addresses or the default DNS name. First, using Route 53 or another DNS provider, create a domain name, and then add or update DNS records with your Global Accelerator IP addresses.
+
+- Short TTL required.
+
+Route53 with Global Accelerator and LoadBalancer. A very fast and expensive architecture.
+![Accelerator](./draws/accelerator-route53-loadbalancer.png)
+
+Additionally with CloudFront if you have a frontend. This is very expensive but with the highest performance.
+![Accelerator 2](./draws/route53-accelerator-loadbalancer-cloudfront.png)
+
+---
+<br>
+
+## CloudFront
+
+
+---
+<br>
+
+
+## Sticky Session
+
 
 ---
 <br>
@@ -166,3 +197,6 @@ ToDo
 - <b>Gateway Load Balancer: </b>Opt for Gateway Load Balancer when you want to deploy and manage third-party virtual appliances like firewalls and security devices in your VPC network traffic path. High security architectures.
 
 - <b>Route53: </b>Use Route53 as a Domain Name Service, create domains like (example.com) assign SSL/TSL certificates to then and more important use Route53 for cross regional routing. Make health checks on your load balancers or services and route traffic to healthy resources in multiple regions or route users to their location based service or route users latency based usw.
+
+- <b>Global Accelerator: </b>Use Global Accelerator to increase performance in your global architecture and for global failover when you not depended on Route53 weighted, latency, user location compliance etc. For more configuration use Route53 only, to just increase global performance use fully managed Global Accelerator. Works with health checks to your ELB.
+
