@@ -244,7 +244,7 @@ ___
 
 - <b>ElastiCache Memchached: </b>Use ElastiCache with Memcached for simple, fast, in-memory caching to offload databases and reduce database load in applications with simple caching needs.
 
-- <b>Quantum Ledger Database: </b>Use Quantum Ledger Database (QLDB) when you need history of all changes to your data, ensuring trust and data integrity.
+- <b>Quantum Ledger Database: </b>Use Quantum Ledger Database (QLDB) when you need history of all changes to your data, ensuring trust and data integrity. Perfect for financial institutions.
 
 - <b>Timestream: </b>Use Timestream for time-series data storage and analysis, suitable for applications that need to ingest, store, and analyze large volumes of time-stamped data, such as IoT and monitoring.
 
