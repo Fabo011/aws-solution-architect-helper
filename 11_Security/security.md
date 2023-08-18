@@ -174,3 +174,5 @@ Amazon Cognito handles user authentication and authorization for your web and mo
 - <b>AWS Network Firewall: </b>Use AWS Network Firewall when you need a firewall on VPC level.
 
 - <b>Cognito: </b>Use AWS Cognito for user authentication an authorization for web and apps.
+
+- <b>CloudHSM: </b>AWS CloudHSM (Hardware Security Module) is a service that provides dedicated hardware for cryptographic key management, offering enhanced security and compliance for sensitive data and applications requiring strong encryption.

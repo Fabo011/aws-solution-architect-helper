@@ -5,5 +5,3 @@ The idea behind this documentation is to have a clear sight at all AWS services 
 The objective is to compare similar services and give you an high level overview that you are able to remember.
 
 Go through all folders and have fun 😝
-
-**Todo:** For further questions or discussions feel free to reach out in our Element group. Element by the way is a secure and anonymous messanger. Or LinkedIn
