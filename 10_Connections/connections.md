@@ -224,7 +224,7 @@ Use AWS VPN CloudHub when you wanna connect multiple on-premises data centers or
 
 - <b>Direct Connect + Direct Connect Gateway: </b>Use Direct Connect Gateway to connect to one or more AWS VPC in many different regions. Keep in mind that you have to connect on-premises to AWS Cloud VPC with Direct Connect first and then you can route to multiple VPCs and multiple account VPCs with Direct Connect Gateway.
 
-- <b>Site2Site vs Direct Connect</b>Site2Site is a connection over the public internet and higher latency, but faster to establish.<br>
+- <b>Site2Site vs Direct Connect: </b>Site2Site is a connection over the public internet and higher latency, but faster to establish.<br>
 Direct Connect is fully private connection with low latency, but takes time to setup.
 
 ---
