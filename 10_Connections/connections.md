@@ -258,7 +258,10 @@ Direct Connect is fully private connection with low latency, but takes time to s
 
 ### VS
 
-- <b>Transit Gateway vs Direct Connect Gateway: </b>AWS Transit Gateway is a hub-and-spoke network transit solution that simplifies connectivity between Amazon VPCs and on-premises networks, while AWS Direct Connect Gateway is used to connect multiple Direct Connect locations to a single virtual private gateway, allowing you to extend on-premises networks into the AWS Cloud using dedicated network connections.
+- <b>Transit Gateway vs Direct Connect Gateway: </b>
+AWS Transit Gateway is a hub-and-spoke network transit solution that simplifies connectivity between Amazon VPCs and on-premises networks. Used to connect multiple VPC from a Site2Site connection.
+<br>
+AWS Direct Connect Gateway is used to connect multiple Direct Connect locations to a single virtual private gateway, allowing you to extend on-premises networks into the AWS Cloud using dedicated network connections.
 
 
 
