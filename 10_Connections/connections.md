@@ -238,6 +238,8 @@ Direct Connect is fully private connection with low latency, but takes time to s
 
 - <b>Transit Gateway: </b>Multiple peering connections for VPCs, VPNs and DX. Keep in mind you cant directly connect Direct Connect with Transit Gateway without Direct Connect Gateway (depends on your requirements).
 
+---
+<br>
 
 ### Internet access to private subnets
 
@@ -251,10 +253,15 @@ Direct Connect is fully private connection with low latency, but takes time to s
 
 - <b>Internet Gateway: </b>Use Internet Gateway when you need Ipv4 and IPv6 internet access to you AWS Cloud VPC.
 
+---
+<br>
 
 ### Event driven connection to multiple services
 
 - <b>EventBridge: </b>Use EventBridge in event driven architectures for example to trigger scaling of Lambda function triggered from CloudWatch. Keep in mind that you that you have a ton of possibilities with EventBus, just be creative and try it out.
+
+---
+<br>
 
 ### VS
 
