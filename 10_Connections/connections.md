@@ -61,6 +61,9 @@ Connection between On-Premises servers or data centers and AWS Cloud VPC.
 You have to enable "Route Propagation" in VPC.<br>
 Add ICMP protocol on the inbound of security group.
 
+- You are charged for each VPN connection hour that your VPN connection is provisioned and available.
+- IPv6 traffic is not supported for VPN connections on a virtual private gateway.
+
 1. ### Customer Gateway - VPN Gateway / public IP
 Allows you to establish a VPN connection between on-premises servers and AWS Cloud VPC.
 This connection using the public internet with a public IP address on Customer Gateway side.
@@ -212,27 +215,51 @@ AWS Direct Connect + AWS Transit Gateway, using transit VIF attachment to Direct
 
 ## Solution Architect Summary 😍
 
-- <b>Internet Gateway: </b>Use Internet Gateway when you need Ipv4 and IPv6 internet access to you AWS Cloud VPC.
+### On-Premises <-> VPC Connections
 
-- <b>Bastian Host: </b>Use Bastian Host when you need SSH access to a private subnet.
-
-- <b>VPC Peering: </b>Connect two VPCs. Not made to connect multiple VPCs, no overlapping CIDR. For failover consider multi peering connection.
-
-- <b>VPC Endpoint PrivateLink: </b>Use either VPC Endpoint PrivateLink to access almost every AWS service but its very expensive or use VPC Endpoint to access S3, DynamoDB and CloudFormation for free. 
-
-- <b>VPC Flow Logs: </b>Use VPC Flow Logs at the VPC/Subnet/ENI Level to accept or reject traffic, identify attacks etc. Connectable with Athena to analyze logs.
-
-- <b>Site2Site VPN: </b>Use 1. Customer Gateway - VPN Gateway / public IP to create a VPN connection over the public internet via public IP address from on-premises Customer Adapter side to AWS Cloud VPC.<br>
-Use 2. Customer Gateway - NAT - VPN Gateway / private IP to create a VPN connection over the public internet via private IP address from on-premises Customer Adapter side to AWS Cloud VPC. Due to the private IP at on-premises side we need NAT between.<br>
-Use 3. AWS VPN CloudHub when you wanna connect multiple on-premises data centers or servers via Virtual Private Gateway (VGW) to AWS Cloud VPC.
+- <b>Site2Site VPN: </b>Setup Customer Gateway on on-premises Data Center, setup a Private Gateway on VPC and site-to-site VPN over public internet.<br>
+Use AWS VPN CloudHub when you wanna connect multiple on-premises data centers or servers via Virtual Private Gateway (VGW) to AWS Cloud VPC.
 
 - <b>Direct Connect: </b>In comparison to Site2Site you can use Direct Connect to establish a full private connection between on-premises to AWS Cloud VPC (Only ONE VPC) via AWS Direct Connect Location. Also a direct connection into S3 or S3 Glacier is possible.
 
 - <b>Direct Connect + Direct Connect Gateway: </b>Use Direct Connect Gateway to connect to one or more AWS VPC in many different regions. Keep in mind that you have to connect on-premises to AWS Cloud VPC with Direct Connect first and then you can route to multiple VPCs and multiple account VPCs with Direct Connect Gateway.
 
+- <b>Site2Site vs Direct Connect</b>Site2Site is a connection over the public internet and higher latency, but faster to establish.<br>
+Direct Connect is fully private connection with low latency, but takes time to setup.
+
+---
+<br>
+
+### Connect services within VPC
+
+- <b>VPC Peering: </b>Connect two VPCs. Not made to connect multiple VPCs, no overlapping CIDR. For failover consider multi peering connection.
+
+- <b>VPC Endpoint/PrivateLink: </b>AWS PrivateLink you can use to privately connect your VPC to services as if they were in your VPC. You do not need to use an internet gateway, NAT device, public IP address, AWS Direct Connect connection, or AWS Site-to-Site VPN connection to allow communication with the service from your private subnets. Therefore, you control the specific API endpoints, sites, and services that are reachable from your VPC.
+
 - <b>Transit Gateway: </b>Multiple peering connections for VPCs, VPNs and DX. Keep in mind you cant directly connect Direct Connect with Transit Gateway without Direct Connect Gateway (depends on your requirements).
 
-- <b>VPC Peering vs Direct Gateway: </b>Direct Gateway is dedicated, better for critical infrastructure.
+
+### Internet access to private subnets
+
+- <b>Bastian Host: </b>Use Bastian Host when you need SSH access to a private subnet.
+
+- <b>NAT Instances: </b>NAT EC2 deployed on a public subnet to give internet access to an private subnet, but this is old use NAT Gateway.
+
+- <b>NAT Gateway: </b>Managed service, provides internet access to private subnet. IPv4 only.
+
+### Internet Gateway to your VPC
+
+- <b>Internet Gateway: </b>Use Internet Gateway when you need Ipv4 and IPv6 internet access to you AWS Cloud VPC.
+
+
+### Event driven connection to multiple services
 
 - <b>EventBridge: </b>Use EventBridge in event driven architectures for example to trigger scaling of Lambda function triggered from CloudWatch. Keep in mind that you that you have a ton of possibilities with EventBus, just be creative and try it out.
+
+### VS
+
+- <b>Transit Gateway vs Direct Connect Gateway: </b>AWS Transit Gateway is a hub-and-spoke network transit solution that simplifies connectivity between Amazon VPCs and on-premises networks, while AWS Direct Connect Gateway is used to connect multiple Direct Connect locations to a single virtual private gateway, allowing you to extend on-premises networks into the AWS Cloud using dedicated network connections.
+
+
+
 
