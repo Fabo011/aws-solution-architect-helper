@@ -211,3 +211,8 @@ Still ToDo
 
 - <b>Compute Optimizer vs Trusted Advisor: </b>AWS Compute Optimizer analyzes resource utilization patterns and recommends optimal instance types, while Trusted Advisor offers broader recommendations for optimizing AWS resources, including cost, performance, security, and fault tolerance.
 
+- <b>AWS Cost Explorer vs AWS Trusted Advisor vs AWS Compute Optimizer: </b> 
+AWS Cost Explorer: Use it to visualize, understand, and manage your AWS costs and usage patterns.<br>
+AWS Trusted Advisor: Use it to get real-time guidance on optimizing your AWS infrastructure and resources for cost, performance, security, and fault tolerance.<br>
+AWS Compute Optimizer: Use it to analyze the utilization and performance of your Amazon EC2 instances and Auto Scaling groups, and receive recommendations to optimize their configurations for better performance and cost efficiency.
+
