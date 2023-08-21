@@ -41,8 +41,10 @@ AWS Config automatically evaluates the recorded configurations against the confi
 
 ## Solution Architect Summary 😍
 
-<b>CloudWatch: </b>Use CloudWatch for real-time monitoring and alerting of performance metrics to ensure optimal application and resource health.
+- <b>CloudWatch: </b>Use CloudWatch for real-time monitoring and alerting of performance metrics to ensure optimal application and resource health.
 
-<b>CloudTrail: </b>Use CloudTrail to track and audit API activity of everything in your AWS account (creation of EC2 Instance, deletion of Container etc.) to maintain accountability, governance, and compliance.
+- <b>CloudWatch Agent: </b>CloudWatch agent enables you to collect internal system-level metrics from Amazon EC2 instances across operating systems. The metrics can include in-guest metrics, in addition to the metrics for EC2 instances.
 
-<b>Config: </b>Use AWS Config for continuous configuration monitoring and assessment of resource compliance to enforce desired configurations and detect changes. Use it like a unit test for your configurations.
+- <b>CloudTrail: </b>Use CloudTrail to track and audit API activity of everything in your AWS account (creation of EC2 Instance, deletion of Container etc.) to maintain accountability, governance, and compliance. You can create a CloudTrail trail in the management account with the organization trails option enabled and this will create the trail in all AWS accounts within the organization.
+
+- <b>Config: </b>Use AWS Config for continuous configuration monitoring and assessment of resource compliance to enforce desired configurations and detect changes. Use it like a unit test for your configurations.

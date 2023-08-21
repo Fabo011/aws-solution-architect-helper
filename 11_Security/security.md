@@ -165,7 +165,7 @@ Amazon Cognito handles user authentication and authorization for your web and mo
 
 - <b>Firewall Manager: </b>Use AWS Firewall Manager in case you have a Organization to manage WAF rules, Shield Advanced rules, security groups, AWS Network Firewall rules, Route53 - DNS firewall rules in one place.
 
-- <b>GuardDuty: </b>Use Amazon GuardDuty if you wanna analyze AWS Cloud environment (CloudTrails, VPC Logs, DNS Logs) using machine learning to find suspicious actions and let you inform/warn via email or notifications. Increases the security level of your AWS account. GuardDuty is a security analyze tool on AWS Cloud environment (Account, Organization) level.
+- <b>GuardDuty: </b>Use Amazon GuardDuty if you wanna analyze AWS Cloud environment (CloudTrails, VPC Logs, DNS Logs) using machine learning to find suspicious actions and let you inform/warn via email or notifications. When you wanna trigger an alarm if something is weird, you have to create CloudWatch event rule which triggers SNS topic. Increases the security level of your AWS account. GuardDuty is a security analyze tool on AWS Cloud environment (Account, Organization) level.
 
 - <b>Inspector: </b>Use AWS Inspector if you need an security scanner for EC2 Instances, Container Images (ECR) or Lambda functions and let you inform via email or notification. Inspector is a security scanning tool in application level. GuardDuty for your account, Inspector for your applications.
 

@@ -205,3 +205,9 @@ Still ToDo
 
 - <b>Well-Architected Framework: </b>Use AWS Well-Architected Framework to review your architecture and improve.
 
+- <b>AWS Compute Optimizer: </b>AWS Compute Optimizer helps you identify the optimal AWS resource configurations, such as Amazon Elastic Compute Cloud (EC2) instance types, Amazon Elastic Block Store (EBS) volume configurations, and AWS Lambda function memory sizes, using machine learning to analyze historical utilization metrics. AWS Compute Optimizer provides a set of APIs and a console experience to help you reduce costs and increase workload performance by recommending the optimal AWS resources for your AWS workloads.
+
+- <b>AWS Trusted Advisor: </b>Trusted Advisor inspects your AWS environment, and then makes recommendations when opportunities exist to save money, improve system availability and performance, or help close security gaps.
+
+- <b>Compute Optimizer vs Trusted Advisor: </b>AWS Compute Optimizer analyzes resource utilization patterns and recommends optimal instance types, while Trusted Advisor offers broader recommendations for optimizing AWS resources, including cost, performance, security, and fault tolerance.
+

@@ -126,7 +126,7 @@ This freaky diagram explain you the process, users -> IAM Groups -> Organization
 
 - <b>IAM Boundaries: </b>Use IAM Boundaries when you wanna limiting permissions for third-party services, implementing the principle of least privilege, enforcing separation of duties, and controlling access to sensitive resources.
 
-- <b>Control Tower: </b>Use AWS Control Tower in case you have a Organization to simplify and automate the process of setting up and governing a secure and well-architected multi-account AWS environment. Make use of pre-configured best practices and guardrails.
+- <b>Control Tower: </b>Use AWS Control Tower in case you have a Organization to simplify and automate the process of setting up and governing a secure and well-architected multi-account AWS environment. Make use of pre-configured best practices and guardrails. A Control Tower landing zone serves as a starting point for creating a well-architected, multi-account AWS environment.
 
 - <b>IAM Identity Center: </b>Use AWS IAM Identity Center when you want to use Single-Sign-On for many business services. Employees can access various business applications with one sign in.
 

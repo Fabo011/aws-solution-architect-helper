@@ -174,13 +174,6 @@ Additionally with CloudFront if you have a frontend. This is very expensive but 
 ---
 <br>
 
-## CloudFront
-
-
----
-<br>
-
-
 ## Sticky Session
 By default, an Application Load Balancer routes each request independently to a registered target based on the chosen load-balancing algorithm. However, you can use the sticky session feature (also known as session affinity) to enable the load balancer to bind a user's session to a specific target. This ensures that all requests from the user during the session are sent to the same target. This feature is useful for servers that maintain state information in order to provide a continuous experience to clients. To use sticky sessions, the client must support cookies.
 
@@ -219,9 +212,13 @@ Amazon CloudFront speeds up distribution of your static and dynamic web content,
 
 - <b>Route53: </b>Use Route53 as a Domain Name Service, create domains like (example.com) assign SSL/TSL certificates to then and more important use Route53 for cross regional routing. Make health checks on your load balancers or services and route traffic to healthy resources in multiple regions or route users to their location based service or route users latency based usw.
 
-- <b>Global Accelerator: </b>Use Global Accelerator to increase performance in your global architecture and for global failover when you not depended on Route53 weighted, latency, user location compliance etc. For more configuration use Route53 only, to just increase global performance use fully managed Global Accelerator. Works with health checks to your ELB.
+- <b>Global Accelerator: </b>Use Global Accelerator to increase performance in your global architecture and for global failover when you not depended on Route53 weighted, latency, user location compliance etc. For more configuration use Route53 only, to just increase global performance use fully managed Global Accelerator. Works with health checks to your ELB. It provides static IP addresses.
 
 - <b>Sticky Session: </b>Use sticky session for user session to route users always to the same target via ALB to keep functionality. For example it can ensure user's shopping cart etc.
 
 - <b>CloudFront: </b>Use Amazon CloudFront when you need a content delivery network (CDN) to accelerate the distribution of your web content, enhance global user experience, and reduce latency by caching and serving content from edge locations closest to your users.
+
+- <b>CloudFront Functions: </b>With CloudFront Functions in Amazon CloudFront, you can write lightweight functions in JavaScript for high-scale, latency-sensitive CDN customizations. Your functions can manipulate the requests and responses that flow through CloudFront, perform basic authentication and authorization, generate HTTP responses at the edge, and more. CloudFront Functions is approximately 1/6th the cost of Lambda@Edge and is extremely low latency as the functions are run on the host in the edge location, instead of the running on a Lambda function elsewhere.
+
+- <b>CloudFront functions vs Lambda Edge</b>Use CloudFront Functions when you need to quickly apply simple request/response modifications at the edge for content customization, such as adding headers or modifying URLs. Use Lambda@Edge when you require more complex logic or integration with other AWS services, as it provides greater flexibility and capabilities for executing custom code at the edge locations.
 
