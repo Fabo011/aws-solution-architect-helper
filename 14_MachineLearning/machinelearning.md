@@ -8,6 +8,8 @@
 
 - <b>AWS Polly: </b>AWS Polly is a text-to-speech service that converts text into lifelike speech, making it useful for creating voice-enabled applications, automated voice responses, and audio content generation.
 
+- <b>AWS Transcribe: </b>Speech-to-text service that converts spoken language into written text.
+
 - <b>AWS Rekognition: </b>AWS Rekognition is a deep learning-based image and video analysis service that detects objects, faces, text, and scenes, making it suitable for building applications that require image and video analysis, content moderation, and facial recognition capabilities.
 
 - <b>AWS Textract: </b>AWS Textract is a fully managed service that automatically extracts text and structured data from scanned documents, forms, and images, making it valuable for automating document processing, data extraction, and content indexing.
