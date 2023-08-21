@@ -18,3 +18,5 @@
 
 - <b>Placement Groups: </b>AWS Placement Groups are logical groupings that enable control over the physical location of Amazon EC2 instances, optimizing network performance and availability based on workload requirements.
 ![Placement Groups](./draws/placementGroups.png)
+
+- <b>AWS Data Exchange: </b>AWS Data Exchange makes it easy for AWS customers to securely exchange and use third-party data on AWS.
