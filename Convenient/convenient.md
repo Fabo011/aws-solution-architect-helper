@@ -185,7 +185,7 @@ Still ToDo
 
 ## Solution Architect Summary 😍
 
-<b>CloudFormation: </b>Use AWS CloudFormation to provision and manage infrastructure as code, ensuring consistent and repeatable deployments of resources and applications. CloudFormation creates all resources for you with the aid of an from you created or from AWS pre-created yaml file, its reliable and cost effective. Fully managed services like Beanstalk also using CloudFormation in the background. Never create AWS services manually, do it with CloudFormation.
+- <b>CloudFormation: </b>Use AWS CloudFormation to provision and manage infrastructure as code, ensuring consistent and repeatable deployments of resources and applications. CloudFormation creates all resources for you with the aid of an from you created or from AWS pre-created yaml file, its reliable and cost effective. Fully managed services like Beanstalk also using CloudFormation in the background. Never create AWS services manually, do it with CloudFormation.
 
 - <b>API Gateway: </b>Use API Gateway to secure and managing you APIs for example in front of Lambda functions.
 
