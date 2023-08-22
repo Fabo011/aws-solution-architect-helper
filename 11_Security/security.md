@@ -176,3 +176,6 @@ Amazon Cognito handles user authentication and authorization for your web and mo
 - <b>Cognito: </b>Use AWS Cognito for user authentication an authorization for web and apps.
 
 - <b>CloudHSM: </b>AWS CloudHSM (Hardware Security Module) is a service that provides dedicated hardware for cryptographic key management, offering enhanced security and compliance for sensitive data and applications requiring strong encryption.
+
+- <b>WAF vs Shield: </b> AWS WAF: AWS Web Application Firewall (WAF) is a service that helps protect web applications from various web exploits and attacks by allowing you to create custom rules to filter and monitor incoming traffic.<br>
+AWS Shield: AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications against large-scale, network and transport layer DDoS attacks by automatically detecting and mitigating them.
