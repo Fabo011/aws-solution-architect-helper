@@ -20,3 +20,5 @@
 ![Placement Groups](./draws/placementGroups.png)
 
 - <b>AWS Data Exchange: </b>AWS Data Exchange makes it easy for AWS customers to securely exchange and use third-party data on AWS.
+
+- <b>AWS Budget: </b>AWS Budgets is a service provided by Amazon Web Services that allows you to set up and manage budgets for your AWS resources and services. With AWS Budgets, you can define spending limits and receive notifications when your usage or costs exceed the thresholds you've set, helping you track, monitor, and control your AWS spending. It's a valuable tool for cost management and ensuring that your AWS usage aligns with your financial goals.

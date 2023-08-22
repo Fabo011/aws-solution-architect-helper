@@ -116,8 +116,15 @@ MQ is a managed message broker service that makes it easy to set up and operate 
 
 - <b>SNS: </b>Use SNS when you need to broadcast messages to multiple subscribers, such as notifications, alerts, or updates, allowing decoupled communication without requiring subscribers to explicitly interact with each other. Danger of data loss, data are not persisted if not delivered. Pub/Sub technique.
 
-- <b>SQS vs SNS: </b>SQS is more suitable for point-to-point communication between components with a focus on reliable message delivery, SNS excels in broadcasting messages to multiple subscribers across various communication channels, making it ideal for notification and event distribution scenarios.
+- <b>SQS vs SNS: </b>SQS is more suitable for point-to-point communication between components with a focus on reliable message delivery, SNS excels in broadcasting messages to multiple subscribers across various communication channels, making it ideal for notification and event distribution scenarios. One message for many receivers.
 
 - <b>Kinesis Data Stream: </b>Kinesis Data Streams is a scalable and real-time data streaming service that ingests and processes high volumes of data, enabling real-time analytics and insights in combination with Kinesis Analytics.
 
 - <b>MQ: </b>Use AWS MQ when you need a managed message broker that supports industry-standard protocols like MQTT, AMQP, and others for seamless communication between applications, services, IoT-Devices and Vehicles.
+
+- <b></b>
+
+- <b>SNS Publish: </b>
+![SNS Publish](./draws/sns-publish.png)
+
+![SNS Publish 2](./draws/SNS2.png)
