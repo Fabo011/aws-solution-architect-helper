@@ -132,6 +132,8 @@ This freaky diagram explain you the process, users -> IAM Groups -> Organization
 
 - <b>AWS Organization: </b>Use AWS Organizations when you need to efficiently manage multiple AWS accounts, establish a hierarchy for account organization, enforce policies consistently, and streamline billing and cost allocation within your organization.
 
+- <b>AWS SCP: </b>AWS SCP (Service Control Policies) is a feature within AWS Organizations that enables central administrators to manage permissions and access control across multiple AWS accounts in a hierarchy. SCPs are used to define fine-grained permissions and restrictions on services and actions that can be performed within member accounts, helping enforce compliance and security policies across an organization's AWS environment.
+
 - <b>AWS Organization Consideration: </b>Be aware that the AWS Organization has mega power over all because a lot of policies are managed over accounts in the organization, it is possible that the organization creator can shut down or delete every service in all accounts of different projects in minutes.
 
 - <b>AWS Organization Consideration 2: </b>If a situation arises where the owner of an AWS Organization account passes away, it's important for the organization to have clear procedures in place for managing account ownership, access, and any associated resources. This might involve coordination with legal and administrative teams to ensure proper handling of the account and its assets according to your organization's policies.
