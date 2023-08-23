@@ -38,7 +38,7 @@ Serverless query service to analyze data stored in S3.
 
 ## Solution Architect Summary 😍
 
-- <b>Kinesis Data Analytics: </br>Amazon Kinesis Data Analytics is a managed service that lets you analyze real-time streaming data using SQL-like queries, suitable for gaining insights, detecting patterns, and making timely decisions from dynamic data sources.
+- <b>Kinesis Data Analytics: </b>Amazon Kinesis Data Analytics is a managed service that lets you analyze real-time streaming data using SQL-like queries, suitable for gaining insights, detecting patterns, and making timely decisions from dynamic data sources.
 
 - <b>Athena: </b>Amazon Athena is a serverless query service that allows you to analyze data stored in Amazon S3 using standard SQL, making it ideal for ad-hoc querying and analysis of large datasets without the need for infrastructure provisioning. Use Parquet or ORC, use AWS Glue to convert data to this formats.
 
