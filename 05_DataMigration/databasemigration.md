@@ -29,8 +29,11 @@ Defined by the organization. RTO is the maximum acceptable delay between the int
 2. Pilot Light<br>
    Small version of the app is always running in the cloud. Only for critical systems which need fast recovery.
 
-3. Warm Standby Hot Site / Multi Site Approach<br>
-   Full system is up and running with minimum size. Very low RTO, recovery in seconds. Very EXPENSIVE - for very critical architectures for example hospital applications.
+3. Warm Standby<br>
+   Full system is up and running with minimum size. Very low RTO, recovery in seconds. Very EXPENSIVE - for very critical architectures for example hospital applications. In a warm standby strategy, a secondary environment is kept ready and operational, but it's not actively processing live traffic.
+
+4. Multi Site<br>
+   Multi-site disaster recovery involves replicating your entire environment, including data and infrastructure, across geographically separated locations. active-active.
 
 The warmer the more expensive.
 
