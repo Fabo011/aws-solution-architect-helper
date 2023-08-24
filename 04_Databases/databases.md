@@ -248,3 +248,5 @@ ___
 
 - <b>Timestream: </b>Use Timestream for time-series data storage and analysis, suitable for applications that need to ingest, store, and analyze large volumes of time-stamped data, such as IoT and monitoring.
 
+- <b>RDS Proxy: </b>AWS RDS Proxy is a managed database proxy service that helps applications efficiently and securely connect to Amazon RDS (Relational Database Service) instances, enhancing scalability, performance, and security of database connections.
+
