@@ -185,3 +185,5 @@ The AWS Snowmobile is a specialized truck (yeah a fucking truck 😃) that is eq
 - <b>Snowball: </b>Snowball is a rugged device for migrating large data sets offline from on-premises to AWS, ideal for data migration, disaster recovery, and content distribution.
 
 - <b>Snowmobile: </b> Snowmobile is a massive data transfer solution on wheels, designed for exabyte-scale data migration from on-premises to the cloud, suitable for large-scale data transfer and migration projects.
+
+- <b>Transfer Family: </b>AWS Transfer Family is a fully managed service that enables the transfer of files into and out of Amazon S3 and Amazon EFS (Elastic File System) storage using protocols like FTP, FTPS, SFTP, and more, suitable for a range of use cases including data migration, content distribution, and automated backups.
