@@ -204,6 +204,8 @@ Amazon CloudFront speeds up distribution of your static and dynamic web content,
 
 ## Solution Architect Summary 😍
 
+- <b>Keep in mind, LoadBalancers can be attached to subnets within VPSs.</b>
+
 - <b>ALB (Application Load Balancer): </b>Use ALB when you need advanced routing, content-based routing, and support for HTTP/HTTPS applications with flexible routing rules.
 
 - <b>NLB (Network Load Balancer): </b>Choose NLB for scenarios requiring high-throughput, low-latency load balancing of TCP/UDP traffic, such as gaming, IoT, and real-time communication applications.
